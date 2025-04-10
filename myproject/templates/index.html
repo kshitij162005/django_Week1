@@ -1,0 +1,14 @@
+<!-- <h1>
+    How are u doing today, {{name}} <br> 
+    You are {{age}} years old <br>
+    Your nationality is {{nationality}}
+
+</h1> -->
+
+
+<h1>Input Your tect below</h1>
+<form method="POST" action="counter">
+    {% csrf_token %}
+    <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <input type="submit"/>
+</form>
