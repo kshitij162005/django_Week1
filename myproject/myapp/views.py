@@ -78,3 +78,7 @@ def counter(request):
     amount_of_words = len(text.split())
     return render(request, 'counter.html', {'amount': amount_of_words})
 
+
+def post(request, pk):
+    return render(request, 'post.html', {'pk':pk})
+
